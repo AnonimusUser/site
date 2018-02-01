@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>Медицинский колледж</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
     <style>
         .format {
             text-align: right;
@@ -40,18 +43,34 @@
                     <p style="font-size:13pt; text-align:left;">
                         Данный ресурс поможет Вам в повторении и обобщении теоретического материала, будет полезен в формировании профессиональных знаний, понадобится для освоения общих и профессиональных компетенций по избранной специальности.
                     </p>
-                    <br>
-                    <p style="text-align: center;">
-                        <img src="images/1.jpg" style="border: 40px;">
-                    </p>
-                </div>
 
+                    <div class="carousel">
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/1.png"><img src="images/carousel/1.png"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/2.png"><img src="images/carousel/2.png"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/3.png"><img src="images/carousel/3.png"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/4.jpg"><img src="images/carousel/4.jpg"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/5.jpg"><img src="images/carousel/5.jpg"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/6.jpg"><img src="images/carousel/6.jpg"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/7.jpg"><img src="images/carousel/7.jpg"></a>
+                            <a class="carousel-item" href="https://umk.herokuapp.com/images/carousel/8.jpg"><img src="images/carousel/8.jpg"></a>
+                    </div>
+                    <br><br>
+                </div>
 
                 <div id="end"></div>
             </div>
         </div>
         <div id="footer"></div>
     </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({dist: -60});
+        });
+    </script>
 </body>
 
 </html>
